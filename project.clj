@@ -12,4 +12,6 @@
   :ring {:handler popular-stories.handler/app}
   :profiles
   {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
-                        [ring/ring-mock "0.3.2"]]}})
+                        [ring/ring-mock "0.3.2"]]}}
+  :uberjar-name popstr.jar
+  :min-lein-version "2.0.0")
