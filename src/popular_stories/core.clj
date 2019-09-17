@@ -3,4 +3,4 @@
   (:require [ring.adapter.jetty :as jetty]))
 
 (defn -main [port]
-  (jetty/run-jetty handler/app {:port port}))
+  (jetty/run-jetty handler/app {:port (read-string port)}))
